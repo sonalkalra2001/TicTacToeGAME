@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: center;
+  height: 30px;
+}
+
+.status span {
+  color: #e2b728;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: #e2b728;
+}
+
+.game-grid {
+  background: #000c0b;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin-top: 10px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-cell {
+  background: #a4f0e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+}
+
+.x,.o {
+  cursor: default;
+}
+
+.x::after {
+  content: '×';
+  font-size: 100px;
+}
+
+.o::after {
+  content: '○';
+  color: #e2b728;
+  font-size: 70px;
+}
+
+.won::after {
+  color: #BD022F;
+}
+
+.imgbox img {
+  display: none;
+  margin: auto;
+  width: 200px;
+}
